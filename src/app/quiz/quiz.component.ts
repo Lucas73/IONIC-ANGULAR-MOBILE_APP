@@ -9,6 +9,7 @@ import { QuizService } from '../../services/quiz.service';
 
 @Injectable()
 export class QuizComponent implements OnInit {
+  answer:string;
 
 
   constructor(private quizService: QuizService) { }
@@ -17,8 +18,12 @@ export class QuizComponent implements OnInit {
 
   // console.log(this.quizService.quizObject.id1.question)
 
-  checkAnswer(id,answer){
-    this.quizService.checkAnswered(id,answer)
+  checkAnswer(id, answer){
+    if(this.quizService.checkAnswered(id, answer)){
+      this.answer = 'Correcto';
+    }else{
+      this.answer = 'Incorrecto. Prueba de Nuevo.'
+    }
   }
 
 }

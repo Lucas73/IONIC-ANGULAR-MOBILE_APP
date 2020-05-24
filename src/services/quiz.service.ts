@@ -12,9 +12,7 @@ export class QuizService {
   checkAnswered(id,correctAnswer){
     for (let i=0;i<this.quizObject.length;i++){
       if (this.quizObject[i]['id']==id && this.quizObject[i]['correctAnswer']==correctAnswer){
-        console.log(true)
-      }else{
-        console.log(false)
+        return true;
       }
     }
   }
