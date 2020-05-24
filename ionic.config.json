@@ -1,5 +1,7 @@
 {
   "name": "pruebaAppXcode",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
