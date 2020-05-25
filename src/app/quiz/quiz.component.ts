@@ -24,7 +24,7 @@ export class QuizComponent implements OnInit {
   checkAnswer(id, answer){
     if(this.quizService.checkAnswered(id, answer)){
       this.answer = 'Correcto'
-      this.openPopover('CORRECTO');
+      this.openPopover('CORRECTO!!!');
     }else{
       this.answer = 'Incorrecto. Prueba de Nuevo.'
       this.openPopover('OOPS! Incorrecto');
