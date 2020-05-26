@@ -27,6 +27,7 @@
     "cordova-ios": "^5.1.1",
     "cordova-plugin-streaming-media": "^2.2.0",
     "cordova-plugin-video-player": "git+https://github.com/moust/cordova-plugin-videoplayer.git",
+    "ngx-qrcode2": "^9.0.0",
     "rxjs": "~6.5.1",
     "sharp": "^0.25.3",
     "tslib": "^1.10.0",

@@ -10,12 +10,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { QuizService } from '../services/quiz.service';
-import { PopoverComponent } from './popover/popover.component'
+import { PopoverComponent } from './popover/popover.component';
+import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 @NgModule({
   declarations: [AppComponent, [PopoverComponent]],
   entryComponents: [[PopoverComponent]],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgxQRCodeModule],
   providers: [
     StatusBar,
     SplashScreen,
