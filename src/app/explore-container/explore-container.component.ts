@@ -8,9 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ExploreContainerComponent implements OnInit {
   @Input() name: string;
 
-  title = 'app';
-  elementType = 'url';
-  value = 'Socio 2101 Sunset 80s';
 
   constructor() { }
 
